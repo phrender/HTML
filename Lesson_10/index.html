@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<!--
+	In this lesson we will look at multimedia on the web
+	such as Sound, Videos and other forms of media on the web.
+	We are going to look at embeding Flash movies using the <object> tag,
+	convert files to common web formats
+-->
+
+<html>
+
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<title>Multimedia</title>
+	</head>
+
+	<body>
+	
+		<!-- Youtube embeding -->
+		<iframe
+			width="560"									<!-- The width of the video -->
+			height="315" 								<!-- The height of the video -->
+			src="//www.youtube.com/embed/i8hSZGTXTx8" 	<!-- The source of the video -->
+			frameborder="0" 							<!-- What kind of border do we want? -->
+			allowfullscreen>							<!-- Do we allow the clip to use the fullscreen option? -->
+		</iframe>
+		<br />
+		
+		<!-- Vimeo embeding -->
+		<iframe 
+			src="//player.vimeo.com/video/9720104" 						<!-- The source of the video -->
+			width="500" 												<!-- The width of the video -->
+			height="341" 												<!-- The height of the video -->
+			frameborder="0" 											<!-- What kind of border do we want -->
+			webkitallowfullscreen mozallowfullscreen allowfullscreen>	<!-- Third party things like WebKit and mozilla tools and the fullscreen option -->
+		</iframe> 
+		<p>
+		<!-- Video description and link to the video and uploader -->
+		<a href="http://vimeo.com/9720104">funny cat</a> from <a href="http://vimeo.com/user3200429">annika austin</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+		
+		<!-- HTML 5 video tag with customized width and height -->
+		<video src="video.mp4" controls width="500px" height="400px"></video>
+		
+		
+		<!-- We can also embed clips using the video tag -->
+		<video src="https://www.youtube.com/watch?v=vF-eVnqq-bwhttps://www.youtube.com/watch?v=vF-eVnqq-bw" width="560" height="315" controls></video>
+		
+		
+	</body>
+
+</html>
