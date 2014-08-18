@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 
 <!--
 	Here we will look at combining JavaScript in forms we 
@@ -13,7 +13,7 @@
         <script type="text/javascript">
 			function checkForm(thisForm)
 			{
-				if (!thisForm.name.returnValue)
+				if (thisForm.name.value == false)
 				{
 					alert("You must enter a name!");
 					return false;
@@ -90,7 +90,7 @@
     	<h1>Registration form</h1>
         
         <p>Please fill out the fomr below to register, fields with bold lables are required.</p>
-        <form method="post" onSubmit="return checkform(this)" enctype="multipart/form-data">
+        <form method="post" onSubmit="return checkForm(this)" enctype="multipart/form-data">
         	<div class="required">
             	<label class="field" for="name">Name</label>
                 <input name="name" type="text" />
